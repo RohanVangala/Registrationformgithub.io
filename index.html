@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Registration form</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <h1>Registration form</h1>
+    </header>
+
+    <section class="container">
+      <form id="my-form">
+        
+        <div class="msg"></div>
+        <div>
+          <label for="name">Name:</label>
+          <input type="text" id="name">
+        </div>
+        <div>
+          <label for="email">Email:</label>
+          <input type="text" id="email">
+        </div>
+        <div>
+          <label for="password">Password:</label>
+          <input type="password"id="password" autocomplete="off">
+          <i class="far fa-eye" id="togglePassword"></i>
+        </div>
+        <div>
+          Gender<select name="gender">
+            <option value="male">Male</option>
+            <option value="female">female</option>
+            <option value="other">other</option>
+            </select></div>
+          
+          
+            <div>
+            DOB <select name="DOB">
+  
+          <input type="date" name="bday">
+          </select>
+        </div>
+           
+            
+        
+        <input class="btn" type="submit" value="Submit">
+      </form>
+
+      <ul id="users"></ul>
+
+      <ul class="items">
+        <li class="item">Item 1</li>
+        <li class="item">Item 2</li>
+        
+      </ul> 
+    </section>
+    
+
+    <script src="ig.js"></script>
+  </body>
+</html>
